@@ -1,4 +1,4 @@
-module github.com/adon988/project-modules
+module github.com/adon988/caculate
 
 go 1.20
 
