@@ -4,28 +4,32 @@ type Caculator struct {
 }
 
 type CaculatorInterface interface {
-	sum(x, y float64) float64
-	sub(x, y float64) float64
-	multiplication(x, y float64) float64
-	division(x, y float64) float64
+	Sum(x, y float64) float64
+	Sub(x, y float64) float64
+	Multiplication(x, y float64) float64
+	Division(x, y float64) float64
 }
 
-func (Caculator) sum(x, y float64) float64 {
+func (Caculator) Sum(x, y float64) float64 {
 	n := x + y
 	return n
 }
 
-func (Caculator) sub(x, y float64) float64 {
+func (Caculator) Sub(x, y float64) float64 {
 	n := x - y
 	return n
 }
 
-func (Caculator) multiplication(x, y float64) float64 {
+func (Caculator) Multiplication(x, y float64) float64 {
 	n := x * y
 	return n
 }
 
-func (Caculator) division(x, y float64) float64 {
+func (Caculator) Division(x, y float64) float64 {
 	n := x / y
 	return n
+}
+
+func Hello() string {
+	return "hi"
 }
